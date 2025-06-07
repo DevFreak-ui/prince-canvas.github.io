@@ -1267,3 +1267,21 @@ code {
     opacity: 0; /* Start fully transparent */
     transition: opacity 1.0s ease; /* Adjust the time as needed */
 }
+
+.update-banner {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.update-banner p {
+    margin: 0;
+    color: #495057;
+    font-size: 0.9em;
+    font-family: 'Google Sans', sans-serif;
+}
