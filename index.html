@@ -35,7 +35,7 @@
 
 <body>
 <div class="update-banner">
-    <p>📢 Updates about this project will be shared here regularly. Please check back for the latest developments!</p>
+    <p>📢 Updates about this project will be shared here regularly. Please fill <a href="#" target="_blank">this form</a> if interested in the project!</p>
 </div>
 
 <div class="toggle-container">
@@ -63,13 +63,24 @@
     <div class="header" id="header">
         <h1>From Limited Contexts to Rich Data</h1>
         <p class="subheading">Elevating Twi NLP through Diverse and Verified Datasets</p>
+        <p class="paper-links">
+            <a href="https://openreview.net/attachment?id=9j6lmECrlp&name=pdf" target="_blank">
+                <button id="paperLinkButton">
+                <span class="icon">
+                    <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
+                    </span>
+                Paper
+                </button>
+            </a>
+        </p>
+
         <p class="authors">
             <span class="author" id="author1">Jackline Mireku<sup>1</sup></span>, 
             <span class="author" id="author2">Prince Mireku<sup>2</sup></span>
         </p>
         <p class="associations">
-            <span class="associations"><sup>1</sup>University of Education, Winneba</span>
-            <span class="associations"><sup>2</sup>ML Collective</span>
+            <span class="associations"><sup>1</sup>University of Education, Winneba <img src="images/winneba.png" alt="Icon 1"></span>
+            <span class="associations"><sup>2</sup>ML Collective <img src="images/mlc.png" alt="Icon 2"></span>
         </p>
     </div>
 
@@ -78,6 +89,10 @@
         This study aims to create a scalable, high-quality Twi-English parallel corpus with wide domain coverage, 
         an update mechanism, and a human-in-the-loop evaluation pipeline.
         </p>
+    </div>
+
+    <div class="bg-black">
+        <img src="images/problem_statement.png" alt="Problem Statement" width="70%">
     </div>
 
     <div class="section" id="Introduction">
@@ -96,10 +111,51 @@
         </div>
     </div>
 
+    <div class="section" id="Contributions">
+        <h2>Our Contributions</h2>
+        <div class="subsection">
+            <div class="subsection" id="DiverseParallelCorpus">
+                <h2>Diverse Parallel Corpus</h2>
+                <p>
+                A large Twi-English corpus covering multiple domains, including literature, healthcare, social media, and news articles. 
+                This diverse dataset will enable more robust and contextually-aware language models for Twi.
+                </p>
+            </div>
+
+            <div class="subsection" id="UpdateFramework">
+                <h2>A Continuous Update Framework</h2>
+                <p>
+                Unlike static datasets, our framework automatically replaces outdated translations when stronger models (e.g., DeepSeek) 
+                become available. This ensures the corpus remains current and improves over time with advances in translation technology.
+                </p>
+                <div class="bg-black">
+                    <img src="images/framework.png" alt="Update Framework" width="90%">
+                </div>
+            </div>
+
+            <div class="subsection" id="BAModel">
+                <h2>Interactive Data Annotation & Evaluation Tool</h2>
+                <p>
+                An intuitive web and mobile interface enables expert reviewers to validate translations, suggest corrections, 
+                and track quality over time. This human-in-the-loop approach ensures high-quality data while maintaining 
+                scalability and efficiency.
+                </p>
+                <div class="future-update">
+                    <img src="images/ai.png" alt="AI Diamond Icon" width="15px">
+                    <span>Check back soon for tool release!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="section" id="Methods">
         <h2>Methods</h2>
+        <div class="subsection">
+            <img src="images/project_pipeline.png" class="image">
+        </div>
+
         <div class="subsection" id="DataAcquisition">
-            <h3>Data Acquisition and Preprocessing</h3>
+            <h2>Data Acquisition and Preprocessing</h2>
             <p>
             We source raw textual data from diverse domains, including literature, health, social media, and news articles. 
             Texts are cleaned and aligned at the sentence level. To address domain imbalance, we supplement underrepresented 
@@ -108,7 +164,7 @@
         </div>
 
         <div class="subsection" id="Translation">
-            <h3>Translation</h3>
+            <h2>Translation</h2>
             <p>
             Initial translations are generated using large language models (LLMs) such as NLLB-200 and Gemini 1.5, 
             prompted with example-rich templates to improve fluency and contextual relevance. Google Translate will 
@@ -117,7 +173,7 @@
         </div>
 
         <div class="subsection" id="Validation">
-            <h3>Expert Validation</h3>
+            <h2>Expert Validation</h2>
             <p>
             Selected samples undergo final review via an interactive interface where linguists and fluent speakers 
             evaluate translations based on clarity, correctness, and cultural fit.
@@ -128,12 +184,14 @@
     <div class="section" id="Results">
         <h2>Anticipated Results</h2>
         <div class="subsection">
-            <ul>
-                <li>High-quality translations: At least 80% of validated sentence pairs are expected to score above 4 out of 5 in human adequacy and fluency evaluations.</li>
-                <li>Improved translation performance: Fine-tuned multilingual models are projected to achieve +3 to +6 BLEU improvement over JW300 on general-domain Twi-English tasks.</li>
-                <li>Domain balance: The final dataset will span ≥5 distinct domains, with no more than 30% from any single category.</li>
-                <li>Expert agreement: Human evaluation via our interface is expected to yield a Cohen's K≥0.75.</li>
+            <p>
+            <ul style="text-align: justify; line-height: 1.6; color: var(--text-color); font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 15px; margin-top: 0px;">
+                <li style="margin-bottom: 15px;"> <strong>High-quality translations:</strong><br> At least 80% of validated sentence pairs are expected to score above 4 out of 5 in human adequacy and fluency evaluations.</li>
+                <li style="margin-bottom: 15px;"> <strong>Improved translation performance:</strong><br> Fine-tuned multilingual models are projected to achieve +3 to +6 BLEU improvement over JW300 on general-domain Twi-English tasks.</li>
+                <li style="margin-bottom: 15px;"> <strong>Domain balance:</strong><br> The final dataset will span ≥5 distinct domains, with no more than 30% from any single category.</li>
+                <li style="margin-bottom: 15px;"> <strong>Expert agreement:</strong><br> Human evaluation via our interface is expected to yield a Cohen's K≥0.75.</li>
             </ul>
+            </p>
         </div>
     </div>
 
@@ -164,18 +222,20 @@
         </div>
     </div>
 
-    <div class="section" id="References">
-        <h2>References</h2>
-        <div class="subsection">
-            <ol>
-                <li>Michael Adjeisah, et al. "Twi corpus: A massively twi-to-handful languages parallel bible corpus." 2020 IEEE Intl Conf on Parallel Distributed Processing with Applications.</li>
-                <li>Željko Agić and Ivan Vulić. "JW300: A wide-coverage parallel corpus for low-resource languages." Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 2019.</li>
-                <li>Paul Azunre, et al. "English-twi parallel corpus for machine translation." 2021.</li>
-                <li>Dorothee Beermann, et al. "Developing a Twi (Asante) dictionary from Akan interlinear glossed texts." Proceedings of the 1st Joint Workshop on Spoken Language Technologies for Under-resourced languages, 2020.</li>
-                <li>Philip Resnik, et al. "The bible as a parallel corpus: Annotating the 'book of 2000 tongues'." Computers and the Humanities, 1999.</li>
-            </ol>
+    <div id="citation">
+        <h2>BibTeX</h2>
+        <code id="myCode">@article{mireku2025,
+            author    = {Mireku, Jackline and Mireku, Prince},
+            title     = {From Limited Contexts to Rich Data: Elevating Twi NLP},
+            year      = {2025},
+            }</code>
+        <button id="copyButton">Copy</button>
+        
+        <div id="contactInfo">
+        <h2>Contact Info</h2>
+        <p>For any questions, please contact us at <a href="mailto:mirekuprince66@gmail.com">mirekuprince66@gmail.com</a>.</p>
         </div>
-    </div>
+    </div> <!--Citation-->
 
 </div> <!--outer container-->
 
